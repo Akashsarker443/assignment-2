@@ -9,9 +9,8 @@ body {
 header {
   height: 520px;
   width: 1045px;
-  background-color: #161616;
+  background-color: #000026;
   display: flex;
-
   margin: 40px auto;
   border-radius: 30px;
 }
@@ -130,6 +129,10 @@ button:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+.match-update a:hover{
+  color: #ff4a60;
+  background-color: #fee5df;
+}
 .match-update .btn {
   background-color: red;
   color: white;
@@ -202,8 +205,8 @@ button:hover {
   styles footer start  here 
 -----------*/
 footer {
-  background-color: #161616;
-  height: 320px;
+  background-color: #000026;
+  height: 340px;
   text-align: center;
 }
 footer h1 {
@@ -223,114 +226,18 @@ footer a {
   text-decoration: none;
   margin: 20px;
   color: gray;
+  
 }
-/*-----------
-  styles footer end  here 
------------*/
+footer a:hover{
+  color: #fee5df;
+}
+.social-icon {
+  margin-top: 30px;
+}
+.social-icon a{
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 20px;
+  color: white;
+}
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  header {
-    width: 920px;
-  }
-  .player-animation {
-    left: 100px;
-  }
-  .ball-animation {
-    left: 140px;
-  }
-  @keyframes ball {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: translate(700px, -47px);
-    }
-  }
-  .header-text {
-    width: 420px;
-    margin-right: 5px;
-  }
-  .header-image img {
-    width: 420px;
-  }
-  .container {
-    flex-direction: column;
-    margin: 0 0;
-  }
-  .match-update {
-    width: 100%;
-    height: 150px;
-    flex-direction: row;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-  }
-  .match-update a {
-    border: 1px solid black;
-    width: 230px;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    white-space: nowrap;
-    font-size: 25px;
-  }
-  .blogs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    grid-column-gap: 20px;
-  }
-  .blog {
-    width: 450px;
-    height: 500px;
-  }
-  .blog img {
-    width: 100%;
-    height: 260px;
-    border-radius: 10px;
-  }
-  .blog-text a {
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: black;
-    font-size: 25px;
-  }
-  .blog-text h4{
-    font-size: 23px;
-  }
-  .blog-icon{
-    margin-top: 20px;
-  }
-  .icon-1{
-    margin-right: 30px;
-  }
-  .icon-1 i{
-    font-size: 30px;
-    color: gray;
-  }
-  .icon-1 p{
-    font-size: 25px;
-    color: gray;
-  }
-  .view-btn {
-    display: block;
-    margin-top: 50px;
-  }
-  footer{
-    height: 420px;
-  }
-  .links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .links a{
-    margin: 20px 50px;
-    font-size: 20px;
-  }
-}
