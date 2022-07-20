@@ -1,0 +1,230 @@
+ /*------------------------------------------------------------
+ 
+      media query for upcoming-match  webpage   
+
+------------------------------------------------------------*/
+ 
+
+/*--------
+     media query for medium devices(Tablet) starts
+ ----------*/
+ @media screen and (min-width: 576px) and (max-width: 992px) {
+    header {
+      width: 920px;
+    }
+    .player-animation {
+      left: 100px;
+    }
+    .ball-animation {
+      left: 140px;
+    }
+    @keyframes ball {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: translate(700px, -47px);
+      }
+    }
+    .header-text {
+      width: 420px;
+      margin-right: 5px;
+    }
+    .header-image img {
+      width: 420px;
+    }
+    .container {
+      flex-direction: column;
+      margin: 0 0;
+    }
+    .match-update {
+      width: 100%;
+      height: 150px;
+      flex-direction: row;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+    }
+    .match-update a {
+      border: 1px solid black;
+      width: 230px;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      white-space: nowrap;
+      font-size: 25px;
+    }
+    .blogs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+      grid-column-gap: 20px;
+    }
+    .blog {
+      width: 450px;
+      height: 270px;
+    }
+   
+.flag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .flag h4{
+     font-size: 25px;
+
+  }
+  .blog h3 {
+      font-size: 30px;
+  }
+  .flag img {
+    width: 150px;
+    height: 90px;
+  }
+    
+ 
+    .view-btn {
+      display: block;
+      margin-top: 50px;
+    }
+    footer {
+      height: 450px;
+      width: 100%;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .links a {
+      margin: 20px 50px;
+      font-size: 20px;
+    }
+  }
+  /*--------
+       media query for medium devices(Tablet) ends here
+    ----------*/
+  
+  /*--------
+       media query for small devices(Mobile) starts
+    ----------*/
+  @media screen and (max-width: 576px) {
+    header {
+      flex-direction: column;
+      margin-top: 0px;
+      width: 480px;
+      height: 890px;
+      margin: 0 auto;
+    }
+    .player-animation {
+      left: 120px;
+    }
+    .ball-animation {
+      left: 165px;
+      top: 60px;
+    }
+    .header-text {
+      width: 380px;
+      text-align: center;
+      margin-left: 50px; 
+      margin-right: 40px;
+    }
+    .header-image img {
+      width: 370px;
+      height: 476px;
+      margin-left: 60px;
+    }
+    .header-text h1 {
+      font-size: 40px;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 20px;
+    }
+    .remove-br{
+        display: none;
+    }
+    .header-text p {
+      line-height: 25px;
+      text-align: center;
+      font-size: 15px;
+    }
+    .remove{
+      display: none;
+    }
+    .container{
+      flex-direction: column;
+    }
+    .match-update {
+      width: 100%;
+      height: 350px;
+      margin-top: -100px;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+    }
+    .match-update a {
+      border: 1px solid black;
+      width: 270px;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      margin-top: 20px;
+      white-space: nowrap;
+      font-size: 25px;
+    }
+    .blogs {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-right: 20px;
+      margin-left: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+    .blog {
+      width: 420px;
+      height: 280px;
+    }
+    .flag {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .flag h4{
+         font-size: 25px;
+    
+      }
+      .blog h3 {
+          font-size: 30px;
+      }
+      .flag img {
+        width: 150px;
+        height: 90px;
+      }
+        
+  
+    .view-btn{
+      display: block;
+      margin-bottom:30px ;
+      margin-top: -80px;
+    }
+    footer{
+      height: 720px;
+    }
+    .links{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  /*--------
+       media query for small devices(Mobile) ends here
+    ----------*/

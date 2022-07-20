@@ -1,4 +1,11 @@
-/*--------
+  /* -----------------
+  
+  This media query is for index-html (main website) webpage 
+  
+  --------------------*/
+  
+  
+  /*--------
      media query for medium devices(Tablet) starts
  ----------*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -142,10 +149,15 @@
     margin-left: 60px;
   }
   .header-text h1 {
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 20px;
   }
+  .remove-br{
+    display: none;
+  }
+
   .header-text p {
     line-height: normal;
     text-align: center;
